@@ -158,7 +158,6 @@ meatBtn.addEventListener("click", () => {
         return entry.Type == 'Kjøtt';
     });
     let randomMeal = filtered[Math.floor((Math.random() * Object.keys(filtered).length))];
-    randomMeal = filtered[Object.keys(filtered).length -1];
     printMeal(randomMeal);
 });
 
