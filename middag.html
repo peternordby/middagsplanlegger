@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middagsplanlegger'n</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div class="text-end">
+            <button type="button" class="my-1 mx-1 btn btn-primary text-end" onclick="location.href = 'addMeal.html'">Legg til en rett</button>
+        </div>
+        <h1 class="mt-5 text-center">Sulten?</h1>
+        <h3 class="text-center">Trykk på en av knappene under!</h3>
+        <div class="text-center">
+            <button type="button" class="mx-1 btn btn-primary" id="meat_btn">Kjøtt</button>
+            <button type="button" class="mx-1 btn btn-primary" id="fish_btn">Fisk</button>
+            <button type="button" class="mx-1 btn btn-primary" id="veg_btn">Vegetar</button>
+        </div>
+    </div>
+    <div id="meal" class="mt-5 p-5"></div>
+    <div id="ingredients" class="text-center"></div>
+    <div id="recipe" class="fs-5 text-center"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="middagsretter.json"></script>
+    <script src="middag.js"></script>
+</body>
+</html>
