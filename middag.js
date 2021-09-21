@@ -226,4 +226,5 @@ function addMeal() {
     meals = getMeals();
     meals.push(meal);
     window.localStorage.setItem('meals', JSON.stringify(meals))
+    window.alert("La til " + middagsrett + " i databasen!")
 }
